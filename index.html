@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العلوم ده حكاية | مس منى عزام</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { 
+            --primary: #00e5ff; 
+            --bg-dark: #0f172a;
+            --wa: #25d366;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; background: var(--bg-dark); 
+            color: #fff; line-height: 1.5; 
+            background-image: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%);
+            background-attachment: fixed;
+        }
+
+        header { text-align: center; padding: 40px 20px; }
+        .logo { 
+            width: 110px; height: 110px; border-radius: 50%; 
+            border: 3px solid var(--primary); box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+            margin-bottom: 15px;
+        }
+
+        .container { width: 95%; max-width: 950px; margin: auto; padding-bottom: 50px; }
+
+        .card { 
+            background: rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 25px; margin-bottom: 30px; 
+            display: flex; flex-direction: column; overflow: hidden;
+            transition: 0.3s;
+        }
+
+        /* تنسيق الصور يمين والنصوص يسار في الشاشات الكبيرة */
+        @media (min-width: 768px) {
+            .card { flex-direction: row; align-items: stretch; }
+            .img-side { width: 38%; min-height: 100%; display: flex; align-items: center; justify-content: center; background: #fff; padding: 10px; }
+            .content-side { width: 62%; padding: 25px 35px; }
+        }
+
+        .img-side img { max-width: 100%; height: auto; border-radius: 10px; object-fit: contain; }
+        .content-side { padding: 20px; text-align: right; }
+
+        h2 { color: var(--primary); font-size: 1.6rem; margin-top: 0; border-right: 4px solid var(--primary); padding-right: 15px; }
+
+        ul { padding: 0; list-style: none; margin: 15px 0; }
+        li { margin-bottom: 10px; display: flex; align-items: flex-start; font-size: 1.05rem; }
+        li::before { content: "🔹"; margin-left: 10px; color: var(--primary); }
+
+        .price { 
+            background: rgba(0, 229, 255, 0.1); color: var(--primary); padding: 12px; 
+            border-radius: 12px; text-align: center; font-weight: bold; margin: 15px 0;
+            border: 1px solid rgba(0, 229, 255, 0.3); font-size: 1.1rem;
+        }
+
+        .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+        .btn { 
+            flex: 1; min-width: 140px; padding: 12px; border-radius: 50px; 
+            text-decoration: none; font-weight: bold; text-align: center; 
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            transition: 0.3s; font-size: 1rem;
+        }
+
+        .btn-wa { background: var(--wa); color: #fff; }
+        .btn-wa:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(37,211,102,0.3); }
+        .btn-alt { background: rgba(255,255,255,0.1); color: #fff; }
+
+        .social { text-align: center; margin-top: 40px; }
+        .social a { color: #fff; font-size: 2.5rem; margin: 0 15px; transition: 0.3s; }
+        .social a:hover { color: var(--primary); }
+
+        footer { text-align: center; padding: 30px; opacity: 0.5; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/gLv5HY0Q/Screenshot-99c04817c0de5652397fc8b56c3b3817.jpg" class="logo">
+    <h1 style="margin:0; color:var(--primary);">العلوم ده حكاية</h1>
+    <p style="margin:5px 0; opacity:0.8;">مع مس منى عزام - رحلة التفوق تبدأ هنا</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <div class="img-side">
+            <img src="https://i.ibb.co/zWMvSjtD/Screenshot-680d03679600f7af0b4c700c6b270fe7.jpg" alt="الملازم">
+        </div>
+        <div class="content-side">
+            <h2>ملازم العلوم (2026)</h2>
+            <ul>
+                <li>شرح شامل للمنهج بأسلوب مبسط.</li>
+                <li>أسئلة واجب مكثفة بعد كل حصة.</li>
+                <li>بنك أسئلة ونماذج إجابة نموذجية.</li>
+                <li>تدريبات على اختبارات المحافظات.</li>
+            </ul>
+            <div class="price">سعر النسخة الإلكترونية (PDF): 50 جنيهاً فقط</div>
+            <div class="btn-row">
+                <a href="https://wa.me/201270200875?text=طلب%20ملزمة%20العلوم" class="btn btn-wa"><i class="fab fa-whatsapp"></i> اطلبها الآن</a>
+                <a href="https://drive.google.com/drive/folders/1o-nXEBw_aiebw8uLv8S-JBO4bEh7aMTo" class="btn btn-alt">عينة الملازم</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-side">
+            <img src="https://i.ibb.co/KchxNsXy/Screenshot-680d03679600f7af0b4c700c6b270fe7.jpg" alt="الأونلاين">
+        </div>
+        <div class="content-side">
+            <h2>نظام الأونلاين (زووم)</h2>
+            <ul>
+                <li>حصتين مباشر على زووم أسبوعياً.</li>
+                <li>واجب حصري واختبار شامل لكل مفهوم.</li>
+                <li>تفاعل مباشر، مسابقات، وتكريم للأوائل.</li>
+                <li>متابعة وتصحيح الواجبات مع معلم مختص.</li>
+                <li>عدد الطلاب: غير محدود.</li>
+            </ul>
+            <div class="price">ابتدائي: 200ج شهرياً | إعدادي: 300ج شهرياً</div>
+            <div class="btn-row">
+                <a href="https://wa.me/201270200875?text=حجز%20اونلاين%20زووم" class="btn btn-wa" style="width:100%"><i class="fab fa-whatsapp"></i> احجز مكانك الآن</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-side">
+            <img src="https://i.ibb.co/qLqRvjbT/Screenshot-c0d35d5c8ea536686f7fb1c9f2f8f274.jpg" alt="الأوفلاين">
+        </div>
+        <div class="content-side">
+            <h2>الحصص المسجلة (أوفلاين)</h2>
+            <ul>
+                <li>حصتان مسجلتان أسبوعياً + فيديوهات تعليمية.</li>
+                <li>الفيديوهات متاحة طوال الترم للمراجعة والتكرار.</li>
+                <li>تصحيح واجبات ومتابعة مع فريق متخصص.</li>
+                <li>هدية: ملزمة الشرح PDF مجاناً للمشتركين.</li>
+            </ul>
+            <div class="price">الترم كامل: 300ج ابتدائي | 400ج إعدادي</div>
+            <div class="btn-row">
+                <a href="https://wa.me/201270200875?text=حجز%20حصص%20مسجلة" class="btn btn-wa"><i class="fab fa-whatsapp"></i> اشترك في الترم</a>
+                <a href="https://t.me/+q9v0T8WCgj9iYjFk" class="btn btn-alt">آراء الطلاب ⭐</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="social">
+        <a href="https://www.facebook.com/share/1DjN1Fj1r4/"><i class="fab fa-facebook"></i></a>
+        <a href="https://youtube.com/@mona_azzam?si=VxDZcPm72z8t3spe"><i class="fab fa-youtube"></i></a>
+    </div>
+
+</div>
+
+<footer>
+    © ٢٠٢٦ - منصة العلوم ده حكاية | مس منى عزام
+</footer>
+
+</body>
+</html>
